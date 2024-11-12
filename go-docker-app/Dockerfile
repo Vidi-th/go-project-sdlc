@@ -11,7 +11,7 @@ COPY . .
 RUN go mod init go_docker_app && go build -o app main.go
 
 # Expose the port on which the app will run
-EXPOSE 8080
+EXPOSE 3000
 
 # Run the app
 CMD ["./app"]
